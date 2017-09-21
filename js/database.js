@@ -1,34 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
 
-    <input type="text" id="input">
-    <button type="button" id="btn">送出</button>
+            $(document).ready(function(){
 
-    <ul id='ul'></ul>
-
-
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
-    <script>
-      // Initialize Firebase
-      var config = {
-        apiKey: "AIzaSyBOOrsP1xiZESmcuWg3iHdOw4j-fCmOCGc",
-        authDomain: "webfirebase-88e1c.firebaseapp.com",
-        databaseURL: "https://webfirebase-88e1c.firebaseio.com",
-        projectId: "webfirebase-88e1c",
-        storageBucket: "webfirebase-88e1c.appspot.com",
-        messagingSenderId: "1057133298025"
-      };
-      firebase.initializeApp(config);
-          
-          $(document).ready(function(){
             var msgRef =firebase.database().ref('/messages/');
             //按鈕處發事件
             $('#btn').on('click',function(){
@@ -57,8 +29,6 @@
                 var key=$(this).data('key');
                 msgRef.child(key).remove();
             });
-      })
-    </script>
 
-</body>
-</html>
+      })
+
