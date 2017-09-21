@@ -1,0 +1,77 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(../image/bg.jpg);
+    background-size: cover;
+    font-family: sans-serif;
+}
+.loginBox{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    height: 420px;
+    padding: 80px 40px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, .5);
+}
+.user{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: calc(-100px/2);
+    left: calc(40%);
+}
+h2{
+    margin: 0;
+    padding: 0 0 20px;
+
+    color: #000000;
+    text-align: center;
+
+}
+.loginBox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: #ffffff
+}
+.loginBox input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.loginBox input[type="text"],
+.loginBox input[type="password"]{
+    border:none;
+    border-bottom: 1px solid #ffffff;
+    background: transparent;
+    outline: none;
+    height: 30px;
+    color: #ffffff;
+    font-size: 16px
+}
+::placeholder{
+    color: rgba(255, 255, 255, .5);
+}
+
+.loginBox input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    color: #ffffff;
+    font-size: 16px;
+    margin-top: 10px;
+    background: #000000;
+    cursor: pointer /*變動滑鼠游標*/
+}
+.loginBox input[type="submit"]:hover{
+    background: #9B4F4F;
+    color: #CBBDBD
+}
+.loginBox a{
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: bold;
+    text-decoration: none; /*移除底部連結線*/
+}
