@@ -17,6 +17,7 @@ function onClick(){
     var password=document.getElementById("password").value;
     console.log("email: "+email);
     console.log("password: "+password);
+    alert(email);
     // //註冊新用戶
     // var check=0;
     // firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
